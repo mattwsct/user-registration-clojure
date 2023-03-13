@@ -1,15 +1,29 @@
-;; shadow-cljs configuration
-{:deps
- {:aliases [:cljs]}
+{:nrepl {:port 8777}
+
+ 
+
+ :source-paths ["src" "test"]
+
+ :dependencies
+ [[reagent "1.1.1"]
+  [re-frame "1.3.0"]
+
+  [binaryage/devtools "1.0.6"]]
 
  :dev-http
- {8020 "public"}
+ {8280 "resources/public"
+  8290 "target/browser-test"}
 
  :builds
  {:app
-  {:target :browser
-   :output-dir "public/js"
-   :asset-path "/js"
+  {:target     :browser
+   :output-dir "resources/public/js/compiled"
+   :asset-path "/js/compiled"
    :modules
-   {:main
-    {:init-fn tailwind.app/init}}}}}
+   {:app {:init-fn registration-app.core/init}}
+   :devtools
+   {:preloads []}
+   :dev
+   {:compiler-options
+    {:closure-defines
+     { }}}}}}
