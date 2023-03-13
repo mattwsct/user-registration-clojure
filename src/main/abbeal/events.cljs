@@ -1,5 +1,5 @@
-(ns tailwind.events
-  (:require [tailwind.db :as db]))
+(ns abbeal.events
+  (:require [abbeal.db :as db]))
 
 (defn login
   []
@@ -7,7 +7,8 @@
 
 (defn logout
   []
-  (swap! db/state assoc :auth? false))
+  (swap! db/state assoc :auth? false)
+  (swap! db/state assoc :user-dropdown? false))
 
 (defn toggle-user-dropdown
   []

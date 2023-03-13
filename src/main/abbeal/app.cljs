@@ -1,7 +1,7 @@
-(ns tailwind.app
+(ns abbeal.app
   (:require [reagent.dom :as dom]
-            [tailwind.views :as views]
-            [tailwind.db :as db]))
+            [abbeal.views :as views]
+            [abbeal.db :as db]))
 
 (defn app
   []
@@ -12,7 +12,7 @@
 ;; start is called by init and after code reloading finishes
 (defn ^:dev/after-load start []
   (dom/render [app]
-    (.getElementById js/document "app")))
+              (.getElementById js/document "app")))
 
 (defn init []
   ;; init is called ONCE when the page loads
