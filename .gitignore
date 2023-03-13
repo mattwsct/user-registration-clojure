@@ -1,16 +1,13 @@
-/out/
-/resources/public/js/compiled/
-/target/
-/*-init.clj
-/*.log
-
-# Leiningen
-/.lein-*
+/.clj-kondo
+/.lsp
+/.cpcache
+/.vscode
+/public/js
+/public/css
+/node_modules
+/target
+/.shadow-cljs
+/*.iml
 /.nrepl-port
-
-# Node.js dependencies
-/node_modules/
-
-# shadow-cljs cache, port files
-/.shadow-cljs/
-.DS_Store
+/.idea
+shadow-cljs-tailwind.iml
