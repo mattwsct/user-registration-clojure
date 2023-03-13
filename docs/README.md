@@ -1,6 +1,6 @@
 # Shadow-CLJS/Reagent app for user registration
 
-This is an example of how to setup shadow-cljs and [tailwindcss](https://github.com/tailwindlabs/tailwindcss)
+Using Tailwind CSS for styles
 
 ## Setup
 
