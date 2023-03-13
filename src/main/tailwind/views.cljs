@@ -37,7 +37,7 @@
    [:div {:class "hidden lg:flex lg:flex-shrink-0"}
     [:div {:class "flex flex-col w-64 border-r border-gray-200 pt-5 pb-4 bg-gray-100"}
      [:div {:class "flex items-center flex-shrink-0 px-6"}
-      [:div {:class "text-center text-3xl font-bold text-gray-900"} "App"]]
+      [:div {:class "text-center text-3xl font-bold text-gray-900"} "Abbeal"]]
      [:div {:class "h-0 flex-1 flex flex-col overflow-y-auto"}
       [:div {:class "px-3 mt-6 relative inline-block text-left"}
        [:div
@@ -59,10 +59,6 @@
        (when (:user-dropdown? @db/state)
          [:div {:class "z-10 mx-3 origin-top absolute right-0 left-0 mt-1 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-200 focus:outline-none" :role "menu" :aria-orientation "vertical" :aria-labelledby "options-menu"}
           [:div {:class "py-1" :role "none"}
-           [:a {:href "#" :class "block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" :role "menuitem"} "View profile"]
-           [:a {:href "#" :class "block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" :role "menuitem"} "Settings"]
-           [:a {:href "#" :class "block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" :role "menuitem"} "Notifications"]]
-          [:div {:class "py-1" :role "none"}
            [:a {:href "#"
                 :on-click #(events/logout)
                 :class "block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" :role "menuitem"}
@@ -71,20 +67,9 @@
        [:div {:class "space-y-1"}
         [:a {:href "#" :class "bg-gray-200 text-gray-900 group flex items-center px-2 py-2 text-sm font-medium rounded-md"}
          [:svg {:class "text-gray-500 mr-3 h-6 w-6" :xmlns "http://www.w3.org/2000/svg" :fill "none" :viewBox "0 0 24 24" :stroke "currentColor" :aria-hidden "true"}
-          [:path {:stroke-linecap "round" :stroke-linejoin "round" :stroke-width "2" :d "M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"}]] "Home"]
-        [:a {:href "#" :class "text-gray-700 hover:text-gray-900 hover:bg-gray-50 group flex items-center px-2 py-2 text-sm font-medium rounded-md"}
-         [:svg {:class "text-gray-400 group-hover:text-gray-500 mr-3 h-6 w-6" :xmlns "http://www.w3.org/2000/svg" :fill "none" :viewBox "0 0 24 24" :stroke "currentColor" :aria-hidden "true"}
-          [:path {:stroke-linecap "round" :stroke-linejoin "round" :stroke-width "2" :d "M4 6h16M4 10h16M4 14h16M4 18h16"}]] "My tasks"]]
-       [:div {:class "mt-8"}
-        [:h3 {:class "px-3 text-xs font-semibold text-gray-500 uppercase tracking-wider" :id "teams-headline"} "Teams"]
-        [:div {:class "mt-1 space-y-1" :role "group" :aria-labelledby "teams-headline"}
-         [:a {:href "#" :class "group flex items-center px-3 py-2 text-sm font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50"}
-          [:span {:class "w-2.5 h-2.5 mr-4 bg-pink-500 rounded-full" :aria-hidden "true"}]
-          [:span {:class "truncate"} "Engineering"]]
-         [:a {:href "#" :class "group flex items-center px-3 py-2 text-sm font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50"}
-          [:span {:class "w-2.5 h-2.5 mr-4 bg-green-500 rounded-full" :aria-hidden "true"}]
-          [:span {:class "truncate"} "Human Resources"]]]]]]]]
+          [:path {:stroke-linecap "round" :stroke-linejoin "round" :stroke-width "2" :d "M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"}]] "Home"]]]]]]
    [:div {:class "flex flex-col w-0 flex-1 overflow-hidden"}
     [:main {:class "flex-1 relative z-0 overflow-y-auto focus:outline-none" :tabIndex "0"}
      [:div {:class "px-4 mt-6 sm:px-6 lg:px-8"}
-      [:h2 {:class "text-gray-500 text-xs font-medium uppercase tracking-wide"} "Main"]]]]])
+      [:h2 {:class "text-gray-500 text-xs font-medium uppercase tracking-wide"} "Registration complete"]
+      [:p {:class "mt-2 text-sm text-gray-600 max-w"} "Thank you for registering! "]]]]])
